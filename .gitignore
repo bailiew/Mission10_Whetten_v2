@@ -1,0 +1,35 @@
+# .NET build artifacts
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+
+# Rider/IntelliJ
+**/.idea/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Node modules (frontend)
+node_modules/
+dist/
+dist-ssr/
