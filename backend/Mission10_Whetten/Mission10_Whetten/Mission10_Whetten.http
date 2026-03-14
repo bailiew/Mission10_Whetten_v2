@@ -1,0 +1,6 @@
+@Mission10_Whetten_HostAddress = http://localhost:5121
+
+GET {{Mission10_Whetten_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
