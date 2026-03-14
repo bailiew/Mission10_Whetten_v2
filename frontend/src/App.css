@@ -1,0 +1,144 @@
+/* Container styling */
+#root {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Heading styles */
+h1 {
+  color: #1a5490;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Table container */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  table-layout: fixed;
+}
+
+/* Table header */
+thead {
+  background: linear-gradient(135deg, #1a5490 0%, #2c7fb8 100%);
+  color: white;
+}
+
+th {
+  padding: 10px 8px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Set specific column widths */
+th:nth-child(1) { width: 18%; } /* Name */
+th:nth-child(2) { width: 10%; } /* Team */
+th:nth-child(3) { width: 18%; } /* Address */
+th:nth-child(4) { width: 12%; } /* City */
+th:nth-child(5) { width: 8%; }  /* State */
+th:nth-child(6) { width: 10%; }  /* Zip */
+th:nth-child(7) { width: 24%; }  /* Phone */
+
+th:last-child {
+  border-right: none;
+}
+
+/* Table body */
+tbody {
+  background-color: #ffffff;
+}
+
+td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  color: #2d3748;
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+  background-color: #e6f3ff;
+  transition: background-color 0.2s ease;
+  cursor: default;
+}
+
+/* Team name styling */
+td:nth-child(2) {
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  th, td {
+    font-size: 0.8rem;
+    padding: 8px 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  table {
+    font-size: 0.75rem;
+  }
+  
+  th, td {
+    padding: 8px 4px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Remove the old default styles that might conflict */
+.counter,
+.hero,
+#center,
+#next-steps,
+#docs,
+#spacer,
+.ticks {
+  display: none;
+}
